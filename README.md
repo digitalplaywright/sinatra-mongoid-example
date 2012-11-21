@@ -1,4 +1,3 @@
-### What
 This is a demo Sinatra app using the following technologies:
 
   + Mongoid (persistence)
