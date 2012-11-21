@@ -8,6 +8,6 @@ require 'sample_app_config'
 require 'routes'
 
 class SampleApp < Sinatra::Base
-
-  run! if app_file == $0
+  set :app_file, __FILE__
+  set :views, settings.root + '/views'
 end
