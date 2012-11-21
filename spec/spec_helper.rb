@@ -1,12 +1,14 @@
+# require application load file
+require File.join(File.dirname(__FILE__), '../application')
+
 require 'bundler'
 Bundler.setup(:default, :test)
 require 'sinatra/base'
 require 'rspec'
 require 'rack/test'
 require 'capybara/rspec'
+require 'capybara/dsl'
 
-# require application load file
-require File.join(File.dirname(__FILE__), '../application')
 
 # expose models, spec and spec subdirectories
 $:.unshift(File.join __FILE__, "../models")
