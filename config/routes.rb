@@ -1,6 +1,6 @@
 class SampleApp < Sinatra::Base
 
   get '/' do
-    'Foo Bar I See You'
+    erb :index
   end
 end
