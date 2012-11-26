@@ -19,11 +19,13 @@ test:
 production:
   sessions:
     default:
-      username: <%= ENV['MONGOID_USERNAME'] %>
-      password: <%= ENV['MONGOID_PASSWORD'] %>
-      database: sample_app_production
-      hosts:
-        - <%= ENV['MONGOID_HOST'] %>
-      port: <%= ENV['MONGOID_PORT'] %>
-      options:
-        consistency: strong
+    hosts:
+      - <%= ENV['MONGOHQ_HOST'] %>
+      port: <%= ENV['MONGOHQ_PORT'] %>
+    username: <%= ENV['MONGOHQ_USERNAME'] %>
+    password: <%= ENV['MONGOHQ_PASSWORD'] %>
+    database: sample_app_production
+    options:
+      skip_version_check: true
+      safe: true
+      consistency: strong

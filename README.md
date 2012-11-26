@@ -12,3 +12,5 @@ of all these amazing technologies. Please fork and comment. To get things going,
   + `review the structure (especially assets directory)`
   + To start the server: `rackup -p 4567`
   + Compile CSS from SCSS: `sass --watch assets:public/stylesheets -r ./assets/bourbon/lib/bourbon.rb`
+  + Install the Heroku Addon for MongoHQ `heroku addons:add mongohq:sandbox`
+  + Follow docs [here](https://devcenter.heroku.com/articles/mongohq#additional-documentation)
