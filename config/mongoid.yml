@@ -19,9 +19,7 @@ test:
 production:
   sessions:
     default:
-    hosts:
-      - <%= ENV['MONGOHQ_HOST'] %>
-      port: <%= ENV['MONGOHQ_PORT'] %>
+      uri: <%= ENV['MONGOHQ_URL'] %>
     username: <%= ENV['MONGOHQ_USERNAME'] %>
     password: <%= ENV['MONGOHQ_PASSWORD'] %>
     database: sample_app_production
