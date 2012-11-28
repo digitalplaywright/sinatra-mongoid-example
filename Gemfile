@@ -17,5 +17,4 @@ group :test do
 end
 
 group :production do
-  gem 'heroku', '~> 2.33.0'
 end
